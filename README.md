@@ -1,45 +1,44 @@
-# smart-city-vehicle-detection-in-iran-yolov8-vs-faster-r-cnn
-A comparative study of YOLOv8 and Faster R-CNN for vehicle detection on real-world street and highway images from Iran.
 # 🚗 YOLOv8 vs Faster R-CNN: Vehicle Detection in Tehran's Urban Environment
 
 ## 📌 Project Overview
 
-This project presents a comprehensive comparison between YOLOv8 and Faster R-CNN for vehicle detection in real-world traffic scenarios across Tehran, Iran. The study focuses on detecting various vehicle types (Ambulance, Bus, Car, Motorcycle, Truck) in challenging urban environments including city streets, highways, and tunnels.
+This project presents a comparative study between YOLOv8 and Faster R-CNN for vehicle detection in real-world traffic scenes across Tehran, Iran. The experiments focus on detecting five vehicle categories under challenging urban conditions.
 
 ---
 
 ## 🚗 Dataset & Methodology
 
-* **Dataset:** Custom vehicle detection dataset collected from Tehran traffic scenes.
-* **Total Images:** 1,254 images (878 train, 250 validation, 126 test).
-* **Vehicle Classes:** Ambulance, Bus, Car, Motorcycle, Truck.
-* **Models Compared:** YOLOv8s (single-stage) vs Faster R-CNN (two-stage).
-* **Environment:** Real-world Iranian traffic conditions with varying lighting, occlusion, and density.
+* **Dataset:** Vehicle detection dataset with additional real-world images from Tehran.
+* **Vehicle Classes:**
+
+  * Ambulance
+  * Bus
+  * Car
+  * Motorcycle
+  * Truck
+* **Models Compared:**
+
+  * YOLOv8 (One-stage detector)
+  * Faster R-CNN (Two-stage detector)
 
 ---
 
-## 📊 Results & Comparison
+## 📊 Model Comparison
 
-| Metric                 | YOLOv8s       | Faster R-CNN |
-| ---------------------- | ------------- | ------------ |
-| Inference Speed        | ⚡ 45-55 FPS   | 🐢 10-15 FPS |
-| Detection Accuracy     | 🏆 Higher mAP | High mAP     |
-| Training Time          | ✅ Faster      | ❌ Slower     |
-| Real-time Capability   | ✅ Yes         | ❌ Limited    |
-| Memory Usage           | ✅ Lower       | ❌ Higher     |
-| Small Object Detection | Good          | Better       |
+| Metric                 | YOLOv8    | Faster R-CNN |
+| ---------------------- | --------- | ------------ |
+| Architecture           | One-stage | Two-stage    |
+| Training Speed         | Faster    | Slower       |
+| Computational Cost     | Lower     | Higher       |
+| Real-time Capability   | Suitable  | Limited      |
+| Small Object Detection | Good      | Better       |
+| Memory Usage           | Lower     | Higher       |
 
 ---
 
 ## 📈 mAP Comparison
 
 ![mAP Comparison](https://github.com/user-attachments/assets/1bde94aa-a76f-44d8-9ebe-593fb03c722b)
-
----
-
-## ⚡ Speed Comparison
-
-![Speed Comparison](https://github.com/user-attachments/assets/e1078f43-8133-4d3e-ae9a-f31e15f5ad1e)
 
 ---
 
@@ -77,7 +76,20 @@ This project presents a comprehensive comparison between YOLOv8 and Faster R-CNN
 
 ## 🎯 Conclusion
 
-The results demonstrate that YOLOv8 provides an excellent balance between speed and accuracy, making it highly suitable for real-time smart city applications. Although Faster R-CNN offers strong localization capabilities, its computational complexity leads to slower inference speed.
+The experimental results show that YOLOv8 provides an excellent balance between speed and accuracy, making it suitable for real-time smart city applications. Although Faster R-CNN offers strong localization capabilities, its higher computational complexity makes it more appropriate for research-oriented tasks.
+
+---
+
+## 🛠 Technologies
+
+* Python
+* PyTorch
+* Ultralytics YOLOv8
+* Torchvision
+* OpenCV
+* Matplotlib
+* NumPy
+* Kaggle Notebook
 
 ---
 
